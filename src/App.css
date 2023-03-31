@@ -1,38 +1,91 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Sen', sans-serif;
+}
+body{
+    background-color:rgb(26, 26, 56);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container{
+    width: 500px;
+    height: 750px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 15px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+form{
+    width: 100%;
+    height: 8%;
+    display: flex;
+    justify-content: center;
+    position: relative;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+form input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    padding-left: 20px;
+    font-size: large;
+    border-radius: 15px;
 }
 
-.App-link {
-  color: #61dafb;
+
+form button{
+    width: 10%;
+    height: 96%;
+    border: none;
+    position: absolute;
+    top : 2px;
+    right: 5px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.weather-info img {
+    width: 70%;
+}
+
+.weather-info{
+    height: 92%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.weather-info  h1{
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+
+.weather-info span {
+    font-size: 6rem;
+    font-weight: bolder;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+form input:focus-visible {
+    border: none;
 }
